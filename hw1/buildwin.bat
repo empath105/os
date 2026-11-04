@@ -1,11 +1,10 @@
 @echo off
-echo Обновление кода из гитхаба...
+echo ╨Ю╨▒╨╜╨╛╨▓╨╗╨╡╨╜╨╕╨╡ ╨║╨╛╨┤╨░ ╨╕╨╖ ╨│╨╕╤В╤Е╨░╨▒╨░...
 git pull origin main
-echo Сборка и компиляция...
+echo ╨б╨▒╨╛╤А╨║╨░ ╨╕ ╨║╨╛╨╝╨┐╨╕╨╗╤П╤Ж╨╕╤П...
 if not exist build mkdir build
 cd build
 cmake -G "MinGW Makefiles" ..
 mingw32-make
 hello.exe
 cd ..
-pause
