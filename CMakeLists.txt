@@ -1,2 +1,3 @@
-PROJECT(hello_world)
-ADD_EXECUTABLE(hello main.c hello.c hello.h)
+cmake_minimum_required(VERSION 3.10)
+project(hello_world)
+add_executable(hello main.c hello.c hello.h)
