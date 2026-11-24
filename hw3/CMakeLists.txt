@@ -11,5 +11,5 @@ add_library(audit_libs STATIC
 add_executable(test_run main.c)
 target_link_libraries(test_run PRIVATE audit_libs)
 if(UNIX AND NOT APPLE)
-    target_link_libraries(audit_libs PRIVATE pthread)
+    target_link_libraries(audit_libs PRIVATE pthread rt)
 endif()
